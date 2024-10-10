@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = "Shoes Selling System"
+authors = ["mukhtar-ahmed <kh.mukhtar60@gmail.com>"]
+license = "Mukhtar Ahmed 02 October 2024"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.115.0"}
+uvicorn = {extras = ["standard"], version = "^0.31.0"}
+pydantic = {extras = ["email"], version = "^2.9.2"}
+sqlalchemy = "^2.0.35"
+psycopg2 = "^2.9.9"
+alembic = "^1.13.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
